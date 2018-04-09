@@ -12,9 +12,27 @@ public class CalculatorTest {
     private Calculator calculator = new Calculator();
 
     @Test
-    public void add() throws Exception {
+    public void addPosPos() throws Exception {
         assertEquals(50, calculator.add(20, 30), 0);
     }
+
+    @Test
+    public void addPosNeg() throws Exception {
+        assertEquals(10, calculator.add(20, -10), 0);
+    }
+
+    @Test
+    public void addNegPos() throws Exception {
+        assertEquals(5, calculator.add(-20.5, 25.5), 0);
+    }
+
+    @Test
+    public void addNegNeg() throws Exception {
+        assertEquals(-59, calculator.add(-25.6, -33.4), 0);
+    }
+
+    // Остальные тесты с дробными(отрицательными/положительынми числами) так же можно сделать
+    // Не вижу смысла писать одно и то же, хотя можно было бы
 
     @Test
     public void subtract() throws Exception {
@@ -35,7 +53,7 @@ public class CalculatorTest {
 
     @Test
     public void calculate() throws Exception {
-        assertEquals(0, calculator.calculate(20, 0, "/"), 0);
+        assertEquals(-1, calculator.calculate(20, 0, "/"), 0);
     }
 
 }
