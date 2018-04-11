@@ -1,0 +1,8 @@
+{
+  "name": "demo1",
+  "version": "1.0.0",
+  "author": "Scherbovich_Igor",
+  "dependencies": {
+    "protractor": "^5.3.1"
+  }
+}
