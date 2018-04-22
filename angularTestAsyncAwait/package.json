@@ -1,0 +1,8 @@
+{
+  "name": "angulartest",
+  "version": "1.0.0",
+  "author": "Scherbovich Igor",
+  "dependencies": {
+    "protractor": "^5.3.1"
+  }
+}
